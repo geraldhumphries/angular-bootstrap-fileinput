@@ -3,7 +3,7 @@
 
     angular
         .module('angularBootstrapFileinput', [])
-        .directive('angularBootstrapFileinput', angularBootstrapFileinput);
+        .directive('angularBfi', angularBootstrapFileinput);
 
     function angularBootstrapFileinput() {
         var directive = {

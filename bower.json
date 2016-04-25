@@ -10,7 +10,8 @@
     "bootstrap",
     "angular",
     "file",
-    "upload"
+    "upload",
+    "input"
   ],
   "dependencies": {
     "bootstrap-fileinput": "^4.0.0"
