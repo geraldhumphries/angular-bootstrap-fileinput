@@ -1,6 +1,7 @@
 {
   "name": "angular-bootstrap-fileinput",
   "main": "angular-bootstrap-fileinput.js",
+  "version": "0.0.1",
   "authors": [
     "Gerald Humphries <geraldhumphries@gmail.com>"
   ],
@@ -9,6 +10,7 @@
   "keywords": [
     "bootstrap",
     "angular",
+    "angularjs",
     "file",
     "upload",
     "input"
@@ -17,7 +19,7 @@
     "bootstrap-fileinput": "^4.0.0"
   },
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/geraldhumphries/angular-bootstrap-fileinput",
   "ignore": [
     "**/.*",
     "node_modules",
