@@ -42,13 +42,11 @@ $scope.bfiConfig = {
 <input id="input-id" type="file" class="file" angular-bfi="bfiConfig" />
 ```
 
-If you wish to make the element refresh any time the options are changed, you can set `watch-options="true"`:
+If you wish to make the element refresh any time the options are changed, you can set `watch-options="true"`. This will immediately call `refresh` on the element's `bootstrap-fileinput` instance, applying the new options. This behaviour is disabled by default.
 
 ```
 <input id="input-id" type="file" class="file" angular-bfi="bfiConfig" watch-options="true" />
 ```
-
-This will immediately call `refresh` on the element's `bootstrap-fileinput` instance, applying the new options. This behaviour is disabled by default.
 
 An options object can be passed directly to the directive:
 ```
