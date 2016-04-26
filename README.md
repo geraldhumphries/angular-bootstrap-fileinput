@@ -3,7 +3,7 @@ A simple wrapper for [bootstrap-fileinput](https://github.com/kartik-v/bootstrap
 
 ## What this does
 
-This package adds a very simple directive to your Angular application that allows you to use and pass options to `bootstrap-fileinput` the Angular way. Changes to the options object will immediately be reflected in the element.
+This package adds a very simple directive to your Angular application that allows you to use and pass options to `bootstrap-fileinput` the Angular way. It can also set a watcher on the options object so any changes will immediately be reflected in the element.
 
 ## What this does NOT do
 
@@ -42,7 +42,13 @@ $scope.bfiConfig = {
 <input id="input-id" type="file" class="file" angular-bfi="bfiConfig" />
 ```
 
-Any changes to the options object will call the `refresh` method on your element, refreshing it with the new parameters.
+If you wish to make the element refresh any time the options are changed, you can set `watch-options="true"`:
+
+```
+<input id="input-id" type="file" class="file" angular-bfi="bfiConfig" watch-options="true" />
+```
+
+This will immediately call `refresh` on the element's `bootstrap-fileinput` instance, applying the new options. This behaviour is disabled by default.
 
 An options object can be passed directly to the directive:
 ```
