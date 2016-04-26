@@ -39,14 +39,14 @@ $scope.bfiConfig = {
     showUpload: false,
     previewFileType: 'any'
 }
-<input id="input-id" type="file" angular-bfi="bfiConfig" />
+<input id="input-id" type="file" class="file" angular-bfi="bfiConfig" />
 ```
 
 Any changes to the options object will call the `refresh` method on your element, refreshing it with the new parameters.
 
 An options object can be passed directly to the directive:
 ```
-<input id="input-id" type="file" angular-bfi="{'showUpload':false, 'previewFileType':'any'}" />
+<input id="input-id" type="file" class="file" angular-bfi="{'showUpload':false, 'previewFileType':'any'}" />
 ```
 
 Options can also be passed in using data attributes:
