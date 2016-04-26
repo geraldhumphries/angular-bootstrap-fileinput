@@ -1,7 +1,6 @@
 {
   "name": "angular-bootstrap-fileinput",
   "main": "angular-bootstrap-fileinput.js",
-  "version": "0.0.1",
   "authors": [
     "Gerald Humphries <geraldhumphries@gmail.com>"
   ],
