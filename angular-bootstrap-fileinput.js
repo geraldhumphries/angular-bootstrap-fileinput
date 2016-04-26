@@ -9,20 +9,35 @@
         var directive = {
             restrict: 'A',
             scope: {
-                options: '=angularBfi'
+                options: '=angularBfi',
+                watchOptions: '@?watchOptions'
             },
-            link: linkFunc
+            link: linkFunc,
+            controller: AngularBootstrapFileinputController,
+            controllerAs: 'vm',
+            bindToController: true
         };
 
         return directive;
 
         function linkFunc(scope, element) {
-            element.fileinput(scope.options);
-            scope.$watch('options', refresh, true);
+            element.fileinput(scope.vm.options);
+            scope.vm.refresh = refresh;
+            activate();
 
+            function activate() {
+                if (scope.vm.watchOptions){
+                    scope.$watch('vm.options', refresh, true);
+                }
+            }
             function refresh() {
-                element.fileinput('refresh', scope.options);
+                element.fileinput('refresh', scope.vm.options);
             }
         }
+    }
+
+    function AngularBootstrapFileinputController(){
+        var vm = this;
+        vm.watchOptions = angular.isDefined(vm.watchOptions) && vm.watchOptions === "true";
     }
 })();
