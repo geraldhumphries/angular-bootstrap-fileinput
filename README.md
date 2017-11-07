@@ -3,7 +3,7 @@ A simple wrapper for [bootstrap-fileinput](https://github.com/kartik-v/bootstrap
 
 ## What this does
 
-This package adds a very simple directive to your Angular application that allows you to use and pass options to `bootstrap-fileinput` the Angular way. It can also set a watcher on the options object so any changes will immediately be reflected in the element.
+This package adds a very simple directive to your AngularJS application that allows you to use and pass options to `bootstrap-fileinput` the AngularJS way. It can also set a watcher on the options object so any changes will immediately be reflected in the element.
 
 ## What this does NOT do
 
